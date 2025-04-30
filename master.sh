@@ -101,6 +101,7 @@ echo
 echo "**** Install Kubectl autocomplete ****"
 echo
 
+echo "export KUBE_EDITOR=nano" | tee --append ~/.bashrc
 source <(kubectl completion bash)
 echo "source <(kubectl completion bash)" >> ~/.bashrc
 
